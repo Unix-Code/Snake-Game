@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Collision()
+comment1.params=moveX\ moveY
+comment1.target=Collision(double,\ double)
+numComments=2

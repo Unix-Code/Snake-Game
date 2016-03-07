@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Movable()
+comment1.params=x\ y\ w\ h\ velX\ velY\ handler
+comment1.target=Movable(int,\ int,\ int,\ int,\ double,\ double,\ Handler)
+comment2.params=x\ y\ w\ h\ vel\ id\ handler
+comment2.target=Movable(int,\ int,\ int,\ int,\ double,\ ID,\ Handler)
+comment3.params=
+comment3.target=void\ tick()
+comment4.params=g
+comment4.target=void\ render(java.awt.Graphics)
+comment5.params=
+comment5.target=double\ getVel()
+comment6.params=vel
+comment6.target=void\ setVel(double)
+comment7.params=
+comment7.target=java.awt.Rectangle\ getBounds()
+numComments=8

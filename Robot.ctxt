@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=x\ y\ w\ h\ handler
+comment0.target=Robot(int,\ int,\ int,\ int,\ Handler)
+comment1.params=direction
+comment1.target=void\ setDirection(Direction)
+comment2.params=
+comment2.target=Direction\ getDirection()
+comment3.params=
+comment3.target=void\ tick()
+comment4.params=
+comment4.target=void\ cleaned()
+numComments=5

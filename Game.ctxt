@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment1.params=
+comment1.target=void\ start()
+comment10.params=check\ min\ max
+comment10.target=boolean\ hitWall(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ stop()
+comment3.params=
+comment3.target=void\ run()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment5.params=
+comment5.target=void\ tick()
+comment6.params=
+comment6.target=void\ render()
+comment7.params=var\ min\ max
+comment7.target=int\ clamp(int,\ int,\ int)
+comment8.params=var\ check\ min\ max
+comment8.target=double\ rebound(double,\ int,\ int,\ int)
+comment9.params=var\ check\ min\ max
+comment9.target=double\ reboundDouble(double,\ double,\ double,\ double)
+numComments=11
