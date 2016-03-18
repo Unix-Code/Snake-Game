@@ -53,7 +53,12 @@ public class Robot extends Movable {
         g.setColor(Color.white);
 
         for (int i = coordsIndex; i < coords.size(); i++) {
-            g.fillRect((int)coords.get(i).getX() + ((i - coordsIndex) * w * ((direction.horizontal) ? direction.move : 0)), (int)coords.get(i).getY() + ((i - coordsIndex) * w * ((direction.vertical) ? direction.move : 0)), w, h);
+            if (i == coords.size() -1) {
+                g.fillRect(x, y, w, h);
+            }
+            else {
+                g.fillRect((int)coords.get(coords.size() - 1 - 5*(i - coordsIndex)).getX(), (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex)).getY(), w, h);
+            }
         }
     }
 
