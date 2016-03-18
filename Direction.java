@@ -1,7 +1,7 @@
 public enum Direction {
     Up(0), Down(1), Left(2), Right(3), Nothing(4);
     
-    protected double move;
+    protected int move;
     protected boolean vertical;
     protected boolean horizontal;
     
