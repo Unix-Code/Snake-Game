@@ -90,8 +90,8 @@ public class Robot extends Movable {
     public boolean hitItSelf() {
         boolean hit = false;
         for (int i = coordsIndex; i < coords.size(); i++) {
-            if (i < coords.size() - 1) {
-                if (coords.get(coords.size() -1).getX() == (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getX() && coords.get(coords.size() -1).getY() == (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getY()) {
+            if (coordsIndex < coords.size() - 3) {
+                if (Math.abs(coords.get(coords.size() - 1).getX() - (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getX()) <= 5 && Math.abs(coords.get(coords.size() - 1).getY() - (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getY()) <= 5) {
                     hit = true;
                 }
             }
