@@ -39,7 +39,7 @@ public class Robot extends Movable {
         // x = Game.clamp(x, 0, Game.width - w);
         // y = Game.clamp(y, 0, Game.height - h);
 
-        if (Game.hitWall(x, 0, Game.width - w) || Game.hitWall(y, 0, Game.height - h)) {
+        if (Game.hitWall(x, 0, Game.width - w) || Game.hitWall(y, 0, Game.height - h) || this.hitItSelf()) {
             handler.removeObject(this);
             Game.gameOver = true;
         }
@@ -57,7 +57,7 @@ public class Robot extends Movable {
                 g.fillRect(x, y, w, h);
             }
             else {
-                g.fillRect((int)coords.get(coords.size() - 1 - 5*(i - coordsIndex)).getX(), (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex)).getY(), w, h);
+                g.fillRect((int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getX(), (int)coords.get(coords.size() - 1 - 5*(i - coordsIndex + 1)).getY(), w, h);
             }
         }
     }
@@ -86,5 +86,14 @@ public class Robot extends Movable {
 
         return scored;
     }
-
+    
+    public boolean hitItSelf() {
+        boolean hit = false;
+        for (int i = coordsIndex - 1; i < coords.size() - 1; i ++) {
+            if (coords.get(coords.size() -1).getX() == coords.get(i).getX() && coords.get(coords.size() -1).getY() == coords.get(i).getY() && coordsIndex != coords.size() - 1) {
+                hit = true;
+            }
+        }
+        return hit;
+    }
 }
